@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <title>GGBlocker</title>
+    <style>
+      body {
+        min-width: 357px;
+        overflow-x: hidden;
+		font-family: arial, sans-serif;
+      }
+
+      img {
+        margin: 5px;
+        border: 2px solid black;
+        vertical-align: middle;
+      }
+	  h2{
+		text-align:center;
+	  }
+	  h4{
+		text-align:center;
+	  }
+	  table{
+		width:100%;
+		text-align:center;
+		margin:auto;
+	  }
+	  td{
+		width:33%;
+	  }
+	  .fRight
+	  {
+		float:right;
+	  }
+	  #home{
+	  
+	  }
+	  .activeFilter{
+		border-color: green;
+		border-style: solid;
+	  }
+	  .disabledFilter{
+		border-color: red;
+		border-style: solid;
+	  }
+	  #editF{
+		display:none;
+	  }
+	  .theT
+	  {
+	  display:block;
+		width:256px;
+		margin-left:auto;
+		margin-right:auto;
+	  }
+	  .menuIcon{
+		width:96px;
+		border: none;
+		cursor: pointer;
+	  }
+	  h3{
+		-webkit-margin-before: .2em;
+		-webkit-margin-after: .2em;
+	  }
+	  .message{
+		color:green;
+	  }
+	</style>
+    <script src="nav.js"></script>
+  </head>
+  <body>
+  <div id='home'>
+	  <h2>Blocking all kinds of fools.</h2>
+	  <img class='theT' src="mrT.jpg"/>
+		<table>
+			<tr>
+				<td><h3>Edit Filters<h3></td>
+				<td><h3>Add to Archive<h3></td>
+				<td><h3 id='disableText'>Disable Blocker<h3></td>
+			</tr>
+			<tr>
+				<td><img class='menuIcon' src='editIcon.png' id='editButton'/></td>
+				<td><img class='menuIcon' src="add_linkIcon.png"  id='archivePage'/></td> 
+				<td><img class='menuIcon' id='disableFiveButton' src='disableIcon.png' /></td>
+			</tr>
+		</table>
+	  <h4>Don't forget to look for updates at <a href='#' id='goGG' >GamerGate HQ</a></h4>
+  </div>
+  <div id='editF'>
+		<h3>Use this page to activate, deactivate, or add filters. For more information on filter patterns see: <a href="#" id='goGoogleDev'>Match Patterns</a></h3>
+		<div class='message 'id='message'></div>
+	   <input type="text" id="addFilterUrl" placeholder="New Filter Pattern"/> <input type='button' value="Add" id='addFilterButton' /> <input type="button" value="Block This Page" id="blockThis"/>
+	  <div id='editFList'>
+	  </div>
+  </div>
+  </body>
+</html>
+
