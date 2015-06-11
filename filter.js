@@ -82,8 +82,6 @@ defaultURLS.push("*://*.tvtropes.org/*");
 defaultURLS.push("*://*.neogaf.com/*");
 defaultURLS.push("*://*.somethingawful.com/*");
 defaultURLS.push("*://*.rllmukforum.com/*");
-defaultURLS.push("*://*.4chan.org/*");
-defaultURLS.push("*://boards.4chan.org/*");
 //----------------------------------Podcasters----------------------------------//
 defaultURLS.push("*://*.idlethumbs.net/idlethumbs");
 defaultURLS.push("*://itunes.apple.com/podcast/idle-thumbs");
